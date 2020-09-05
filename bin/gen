@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Generate Vale configuration in YAML format and print it to STDOUT.
+#
+# Example:
+#
+#   bin/gen FILE
+#
+#   or
+#
+#   cat FILE | bin/gen
+#
+#   or
+#
+#   bin/list | bin/gen
+
+rules = ARGF.each_line.each_with_object({}) do |line, acc|
+  next if line.empty?
+
+  full_name = line.strip
+
+  if full_name.start_with?('Amazon')
+    short_name = full_name.gsub(/(Amazon)/, '')
+                          .strip
+
+    acc[short_name.downcase] = short_name unless short_name.include?(' ')
+    acc["AWS #{short_name}"] = full_name
+  elsif full_name.start_with?('AWS')
+    short_name = full_name.gsub(/(AWS)/, '')
+                          .strip
+
+    acc[short_name.downcase] = short_name unless short_name.include?(' ')
+    acc["Amazon #{short_name}"] = full_name
+  else
+    acc[full_name.downcase] = full_name unless full_name.include?(' ')
+    acc["Amazon #{full_name}"] = full_name
+    acc["AWS #{full_name}"] = full_name
+  end
+end
+
+config = {
+  'extends' => 'substitution',
+  'message' => "Use '%s' instead of '%s'",
+  'level' => 'error',
+  'ignorecase' => true,
+  'action' => {
+    'name' => 'replace'
+  },
+  'swap' => rules
+}
+
+require 'yaml'
+YAML.dump(config, $stdout)

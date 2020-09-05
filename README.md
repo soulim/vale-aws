@@ -15,13 +15,23 @@ Repository: [github.com/errata-ai/vale](https://github.com/errata-ai/vale)
 ## Install
 
 ```
-# TODO: Add installation instructions
+git clone git@github.com:soulim/vale-aws.git
 ```
 
 ## Usage
 
 ```
-# TODO: Add usage instructions
+mkdir -p ~/.config/vale/styles/AWS
+bin/list | bin/gen > ~/.config/vale/styles/AWS/Names.yml
+```
+
+```
+# ~/.config/vale/vale.ini
+
+StylesPath = styles
+
+[*.{md,txt}]
+BasedOnStyles = Vale, AWS
 ```
 
 ## Contributing
