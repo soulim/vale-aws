@@ -21,12 +21,11 @@ git clone git@github.com:soulim/vale-aws.git
 ## Usage
 
 ```
-mkdir -p ~/.config/vale/styles/AWS
-bin/list | bin/gen > ~/.config/vale/styles/AWS/Names.yml
+bin/list | bin/gen > AWS/Names.yml
 ```
 
 ```
-# ~/.config/vale/vale.ini
+# vale.ini
 
 StylesPath = styles
 
