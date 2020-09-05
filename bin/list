@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# List names of AWS services
+#
+# The names are fetched from the AWS status page.
+#
+# Example:
+#
+#   bin/list
+
+require 'nokogiri'
+require 'open-uri'
+
+doc = Nokogiri::HTML(URI.open('https://status.aws.amazon.com/'))
+
+# Collect all unique service names
+names = doc.css('#current_events_block table.fullWidth:first-of-type + table.fullWidth tr td:first-of-type + td')
+           .each_with_object([]) do |cell, acc|
+             # Remove region from the service name before adding it to
+            #  the collection. Region names are enclosed in parenthesis.
+             acc << cell.content
+                        .gsub(/(\(.*\))/, '')
+                        .strip
+           end
+           .uniq!
+
+names.each { |name| puts(name) }
