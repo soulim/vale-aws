@@ -1,0 +1,40 @@
+name: Release a new version
+on:
+  push:
+    tags:
+    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+jobs:
+  release:
+    name: Upload a release asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Prepare a build
+        id: prepare-build
+        env:
+          GITHUB_REF: ${{ github.ref }}
+        run: |
+          version=${GITHUB_REF#refs/tags/v}
+          zip -r AWS.zip AWS -x "*.DS_Store"
+          echo "::set-output name=version::${version}"
+      - name: Create a release
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release v${{ steps.prepare-build.outputs.version }}
+          draft: false
+          prerelease: false
+      - name: Upload a release asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ./AWS.zip
+          asset_name: AWS.zip
+          asset_content_type: application/zip
