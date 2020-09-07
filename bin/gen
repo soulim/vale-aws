@@ -15,10 +15,17 @@
 #
 #   bin/list | bin/gen
 
+EXCEPTIONS = {
+  'Auto Scaling' => 'AWS Auto Scaling'
+}
+
 rules = ARGF.each_line.each_with_object({}) do |line, acc|
   next if line.empty?
 
   full_name = line.strip
+  # Some services have "incorrect" names on the status page. Therefore, these
+  # names are manually fixed.
+  full_name = EXCEPTIONS[full_name] if EXCEPTIONS.key?(full_name)
 
   if full_name.start_with?('Amazon')
     short_name = full_name.gsub(/(Amazon)/, '')

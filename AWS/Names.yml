@@ -89,8 +89,7 @@ swap:
   AWS Worklink: Amazon Worklink
   AWS WorkMail: Amazon WorkMail
   AWS WorkSpaces: Amazon WorkSpaces
-  Amazon Auto Scaling: Auto Scaling
-  AWS Auto Scaling: Auto Scaling
+  Amazon Auto Scaling: AWS Auto Scaling
   Amazon Amplify: AWS Amplify
   Amazon App Mesh: AWS App Mesh
   Amazon Application Discovery Service: AWS Application Discovery Service
