@@ -9,35 +9,23 @@ swap:
   Amazon Alexa for Business: Alexa for Business
   AWS Alexa for Business: Alexa for Business
   AWS API Gateway: Amazon API Gateway
-  appflow: AppFlow
   AWS AppFlow: Amazon AppFlow
   AWS AppStream 2.0: Amazon AppStream 2.0
-  athena: Athena
   AWS Athena: Amazon Athena
-  chime: Chime
   AWS Chime: Amazon Chime
   AWS Cloud Directory: Amazon Cloud Directory
-  cloudfront: CloudFront
   AWS CloudFront: Amazon CloudFront
-  cloudsearch: CloudSearch
   AWS CloudSearch: Amazon CloudSearch
-  cloudwatch: CloudWatch
   AWS CloudWatch: Amazon CloudWatch
   AWS CodeGuru Profiler: Amazon CodeGuru Profiler
   AWS CodeGuru Reviewer: Amazon CodeGuru Reviewer
-  cognito: Cognito
   AWS Cognito: Amazon Cognito
-  comprehend: Comprehend
   AWS Comprehend: Amazon Comprehend
   AWS Comprehend Medical: Amazon Comprehend Medical
-  connect: Connect
   AWS Connect: Amazon Connect
   AWS Data Lifecycle Manager: Amazon Data Lifecycle Manager
-  detective: Detective
   AWS Detective: Amazon Detective
-  documentdb: DocumentDB
   AWS DocumentDB: Amazon DocumentDB
-  dynamodb: DynamoDB
   AWS DynamoDB: Amazon DynamoDB
   AWS Elastic Compute Cloud: Amazon Elastic Compute Cloud
   AWS Elastic Container Registry: Amazon Elastic Container Registry
@@ -47,148 +35,96 @@ swap:
   AWS Elastic Load Balancing: Amazon Elastic Load Balancing
   AWS Elastic MapReduce: Amazon Elastic MapReduce
   AWS Elastic Transcoder: Amazon Elastic Transcoder
-  elasticache: ElastiCache
   AWS ElastiCache: Amazon ElastiCache
   AWS Elasticsearch Service: Amazon Elasticsearch Service
-  eventbridge: EventBridge
   AWS EventBridge: Amazon EventBridge
-  forecast: Forecast
   AWS Forecast: Amazon Forecast
   AWS Fraud Detector: Amazon Fraud Detector
-  freertos: FreeRTOS
   AWS FreeRTOS: Amazon FreeRTOS
-  fsx: FSx
   AWS FSx: Amazon FSx
-  gamelift: GameLift
   AWS GameLift: Amazon GameLift
-  glacier: Glacier
   AWS Glacier: Amazon Glacier
-  guardduty: GuardDuty
   AWS GuardDuty: Amazon GuardDuty
-  inspector: Inspector
   AWS Inspector: Amazon Inspector
   AWS Inter-Region VPC Peering: Amazon Inter-Region VPC Peering
   AWS Interactive Video Service: Amazon Interactive Video Service
-  kendra: Kendra
   AWS Kendra: Amazon Kendra
-  keyspaces: Keyspaces
   AWS Keyspaces: Amazon Keyspaces
   AWS Kinesis Analytics: Amazon Kinesis Analytics
   AWS Kinesis Data Streams: Amazon Kinesis Data Streams
   AWS Kinesis Firehose: Amazon Kinesis Firehose
   AWS Kinesis Video Streams: Amazon Kinesis Video Streams
-  lex: Lex
   AWS Lex: Amazon Lex
-  lightsail: Lightsail
   AWS Lightsail: Amazon Lightsail
   AWS Machine Learning: Amazon Machine Learning
-  macie: Macie
   AWS Macie: Amazon Macie
   AWS Managed Blockchain: Amazon Managed Blockchain
   AWS Managed Streaming for Apache Kafka: Amazon Managed Streaming for Apache Kafka
-  mq: MQ
   AWS MQ: Amazon MQ
-  neptune: Neptune
   AWS Neptune: Amazon Neptune
-  personalize: Personalize
   AWS Personalize: Amazon Personalize
-  pinpoint: Pinpoint
   AWS Pinpoint: Amazon Pinpoint
-  polly: Polly
   AWS Polly: Amazon Polly
   AWS Quantum Ledger Database: Amazon Quantum Ledger Database
-  redshift: Redshift
   AWS Redshift: Amazon Redshift
-  rekognition: Rekognition
   AWS Rekognition: Amazon Rekognition
   AWS Relational Database Service: Amazon Relational Database Service
   AWS Route 53: Amazon Route 53
   AWS Route 53 Domain Registration: Amazon Route 53 Domain Registration
   AWS Route 53 Private DNS: Amazon Route 53 Private DNS
   AWS Route 53 Resolver: Amazon Route 53 Resolver
-  sagemaker: SageMaker
   AWS SageMaker: Amazon SageMaker
   AWS Simple Email Service: Amazon Simple Email Service
   AWS Simple Notification Service: Amazon Simple Notification Service
   AWS Simple Queue Service: Amazon Simple Queue Service
   AWS Simple Storage Service: Amazon Simple Storage Service
   AWS Simple Workflow Service: Amazon Simple Workflow Service
-  simpledb: SimpleDB
   AWS SimpleDB: Amazon SimpleDB
-  sumerian: Sumerian
   AWS Sumerian: Amazon Sumerian
-  textract: Textract
   AWS Textract: Amazon Textract
-  transcribe: Transcribe
   AWS Transcribe: Amazon Transcribe
-  translate: Translate
   AWS Translate: Amazon Translate
   AWS Virtual Private Cloud: Amazon Virtual Private Cloud
-  workdocs: WorkDocs
   AWS WorkDocs: Amazon WorkDocs
-  worklink: Worklink
   AWS Worklink: Amazon Worklink
-  workmail: WorkMail
   AWS WorkMail: Amazon WorkMail
-  workspaces: WorkSpaces
   AWS WorkSpaces: Amazon WorkSpaces
   Amazon Auto Scaling: Auto Scaling
   AWS Auto Scaling: Auto Scaling
-  amplify: Amplify
   Amazon Amplify: AWS Amplify
   Amazon App Mesh: AWS App Mesh
   Amazon Application Discovery Service: AWS Application Discovery Service
-  appsync: AppSync
   Amazon AppSync: AWS AppSync
-  backup: Backup
   Amazon Backup: AWS Backup
-  batch: Batch
   Amazon Batch: AWS Batch
   Amazon Billing Console: AWS Billing Console
   Amazon Certificate Manager: AWS Certificate Manager
-  chatbot: Chatbot
   Amazon Chatbot: AWS Chatbot
   Amazon Client VPN: AWS Client VPN
   Amazon Cloud Map: AWS Cloud Map
-  cloud9: Cloud9
   Amazon Cloud9: AWS Cloud9
-  cloudformation: CloudFormation
   Amazon CloudFormation: AWS CloudFormation
-  cloudhsm: CloudHSM
   Amazon CloudHSM: AWS CloudHSM
-  cloudtrail: CloudTrail
   Amazon CloudTrail: AWS CloudTrail
-  codeartifact: CodeArtifact
   Amazon CodeArtifact: AWS CodeArtifact
-  codebuild: CodeBuild
   Amazon CodeBuild: AWS CodeBuild
-  codecommit: CodeCommit
   Amazon CodeCommit: AWS CodeCommit
-  codedeploy: CodeDeploy
   Amazon CodeDeploy: AWS CodeDeploy
-  codepipeline: CodePipeline
   Amazon CodePipeline: AWS CodePipeline
-  codestar: CodeStar
   Amazon CodeStar: AWS CodeStar
-  config: Config
   Amazon Config: AWS Config
   Amazon Control Tower: AWS Control Tower
   Amazon Data Exchange: AWS Data Exchange
   Amazon Data Pipeline: AWS Data Pipeline
   Amazon Database Migration Service: AWS Database Migration Service
-  datasync: DataSync
   Amazon DataSync: AWS DataSync
-  deepcomposer: DeepComposer
   Amazon DeepComposer: AWS DeepComposer
-  deeplens: DeepLens
   Amazon DeepLens: AWS DeepLens
-  deepracer: DeepRacer
   Amazon DeepRacer: AWS DeepRacer
   Amazon Device Farm: AWS Device Farm
   Amazon Direct Connect: AWS Direct Connect
   Amazon Directory Service: AWS Directory Service
   Amazon Elastic Beanstalk: AWS Elastic Beanstalk
-  elemental: Elemental
   Amazon Elemental: AWS Elemental
   Amazon Elemental MediaConnect: AWS Elemental MediaConnect
   Amazon Elemental MediaConvert: AWS Elemental MediaConvert
@@ -198,15 +134,11 @@ swap:
   Amazon Elemental MediaTailor: AWS Elemental MediaTailor
   Amazon Firewall Manager: AWS Firewall Manager
   Amazon Global Accelerator: AWS Global Accelerator
-  glue: Glue
   Amazon Glue: AWS Glue
-  greengrass: Greengrass
   Amazon Greengrass: AWS Greengrass
   Amazon Ground Station: AWS Ground Station
-  health: Health
   Amazon Health: AWS Health
   Amazon Identity and Access Management: AWS Identity and Access Management
-  import/export: Import/Export
   Amazon Import/Export: AWS Import/Export
   Amazon Internet Connectivity: AWS Internet Connectivity
   Amazon IoT 1-Click: AWS IoT 1-Click
@@ -218,11 +150,9 @@ swap:
   Amazon IoT SiteWise: AWS IoT SiteWise
   Amazon IoT Things Graph: AWS IoT Things Graph
   Amazon Key Management Service: AWS Key Management Service
-  lambda: Lambda
   Amazon Lambda: AWS Lambda
   Amazon License Manager: AWS License Manager
   Amazon Management Console: AWS Management Console
-  marketplace: Marketplace
   Amazon Marketplace: AWS Marketplace
   Amazon Migration Hub: AWS Migration Hub
   Amazon Mobile Hub: AWS Mobile Hub
@@ -230,14 +160,11 @@ swap:
   Amazon OpsWorks for Chef Automate: AWS OpsWorks for Chef Automate
   Amazon OpsWorks for Puppet Enterprise: AWS OpsWorks for Puppet Enterprise
   Amazon OpsWorks Stacks: AWS OpsWorks Stacks
-  organizations: Organizations
   Amazon Organizations: AWS Organizations
-  quicksight: QuickSight
   Amazon QuickSight: AWS QuickSight
   Amazon Resource Access Manager: AWS Resource Access Manager
   Amazon Resource Groups: AWS Resource Groups
   Amazon Resource Groups Tagging API: AWS Resource Groups Tagging API
-  robomaker: RoboMaker
   Amazon RoboMaker: AWS RoboMaker
   Amazon Secrets Manager: AWS Secrets Manager
   Amazon Security Hub: AWS Security Hub
@@ -253,9 +180,7 @@ swap:
   Amazon Transit Gateway: AWS Transit Gateway
   Amazon Trusted Advisor: AWS Trusted Advisor
   Amazon VPCE PrivateLink: AWS VPCE PrivateLink
-  waf: WAF
   Amazon WAF: AWS WAF
-  x-ray: X-Ray
   Amazon X-Ray: AWS X-Ray
   Amazon EC2 Image Builder: EC2 Image Builder
   AWS EC2 Image Builder: EC2 Image Builder
